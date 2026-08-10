@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  padding: 24px;
+  background-color: #fafafa;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.random-img {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+#flight-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.flight-card {
+  width: 340px;
+  border: 2px solid black;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.flight-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.flight-body {
+  padding: 12px 16px 16px;
+}
+
+.flight-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.flight-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.flight-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.flight-details.hidden {
+  display: none;
+}
+
+.flight-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.flight-buttons button {
+  flex: 1;
+  padding: 10px 6px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.flight-buttons button:hover {
+  background-color: #9fd3e8;
+}
+
+#remove-me {
+  display: block;
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 4px;
+}
